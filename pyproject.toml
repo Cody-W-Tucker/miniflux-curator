@@ -11,5 +11,9 @@ dependencies = ["miniflux", "numpy"]
 [project.scripts]
 miniflux-curator = "curator.main:main"
 
+[tool.setuptools]
+package-dir = { "" = "src" }
+
 [tool.setuptools.packages.find]
+where = ["src"]
 include = ["curator*"]
